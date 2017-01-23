@@ -1,4 +1,5 @@
 class Api::V1::LocationsController < ApiController
+  before_action :authenticate_user
   before_action :set_location
 
   def show

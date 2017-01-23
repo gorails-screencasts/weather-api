@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   end
 
   resources :locations
+  root to: "locations#index"
 end
